@@ -1,0 +1,34 @@
+.vacancies{grid-column:1/-1;padding:85px 5.35vw 100px;background:#201e48}
+.vacancy-heading{display:flex;align-items:flex-start;justify-content:space-between;margin-bottom:40px}
+.vacancy-heading h2{font-size:48px;font-weight:500;letter-spacing:-1.5px;margin:0}
+.job-filters{display:grid;grid-template-columns:1.3fr 1fr 1fr auto;gap:14px;align-items:end}
+.job-filters label{font-size:13px;color:#c5c3d4}
+.job-filters input,.job-filters select{display:block;width:100%;height:58px;margin-top:9px;border:1px solid #686588;background:#2b2859;color:#fff;padding:0 18px;outline:none;font:inherit;transition:.2s}
+.job-filters input::placeholder{color:#9d9bb0}
+.job-filters input:focus,.job-filters select:focus{border-color:var(--aqua);box-shadow:0 0 0 1px var(--aqua)}
+.job-filters button{height:58px;border:0;background:var(--aqua);color:var(--ink);padding:0 28px;cursor:pointer;display:flex;align-items:center;gap:25px;transition:.25s}
+.job-filters button:hover{background:var(--yellow);transform:translateY(-2px)}
+.filter-summary{display:flex;justify-content:space-between;padding:30px 0 18px;color:#c5c3d4}
+.filter-summary b{color:var(--yellow)}
+.filter-summary button{border:0;background:none;color:#c5c3d4;cursor:pointer;opacity:0;pointer-events:none;transition:.2s}
+.filter-summary button.visible{opacity:1;pointer-events:auto}
+.filter-summary button:hover{color:#fff}
+.vacancies .jobs{display:grid;grid-template-columns:repeat(4,1fr)}
+.vacancies .jobs>a{min-height:190px;border:1px solid #4d4a72;padding:28px;display:flex;justify-content:space-between;transition:.3s;animation:jobIn .42s both;animation-delay:calc(var(--job-index) * 35ms)}
+.vacancies .jobs>a:hover{background:var(--aqua);color:var(--ink);transform:translateY(-4px)}
+.vacancies .jobs em{display:block;color:var(--yellow);font-size:12px;font-style:normal;margin-bottom:20px}
+.vacancies .jobs>a:hover em{color:var(--ink)}
+.vacancies .jobs b,.vacancies .jobs small{display:block}
+.vacancies .jobs small{margin-top:12px;opacity:.75}
+.vacancies .jobs i{font-style:normal;font-size:23px}
+.no-jobs{grid-column:1/-1;padding:60px;text-align:center;border:1px solid #4d4a72}
+
+@keyframes jobIn{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+
+@media(max-width:900px){
+  .vacancies{padding:65px 24px}
+  .vacancy-heading{display:block}
+  .vacancy-heading h2{font-size:38px}
+  .job-filters{grid-template-columns:1fr}
+  .vacancies .jobs{grid-template-columns:1fr}
+}
