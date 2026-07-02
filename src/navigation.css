@@ -1,8 +1,43 @@
-.nav-mega-trigger{position:relative;border:0;background:none;color:var(--ink);font:inherit;padding:0;cursor:pointer}
-.nav-mega-trigger:after{content:"";position:absolute;height:2px;left:0;right:100%;bottom:-8px;background:var(--aqua);transition:.3s}
-.nav-mega-trigger:hover:after,.nav-mega-trigger.active:after{right:0}
-.nav-mega-trigger i{font-style:normal;font-size:14px;margin-left:5px;display:inline-block;transition:.25s}
-.nav-mega-trigger.active i{transform:rotate(180deg)}
+.mainnav>nav a, .nav-mega-trigger {
+  position: relative;
+  border: 0;
+  background: none;
+  color: var(--ink);
+  font: inherit;
+  padding: 0;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.mainnav>nav a:after, .nav-mega-trigger:after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  left: 0;
+  right: 100%;
+  bottom: -3px;
+  background: var(--aqua);
+  transition: .3s;
+}
+
+.mainnav>nav a:hover:after, .mainnav>nav a.active:after,
+.nav-mega-trigger:hover:after, .nav-mega-trigger.active:after {
+  right: 0;
+}
+
+.nav-mega-trigger i {
+  font-style: normal;
+  font-size: 11px;
+  margin-left: 6px;
+  display: inline-block;
+  transition: .25s;
+  color: inherit;
+  vertical-align: middle;
+}
+
+.nav-mega-trigger.active i {
+  transform: rotate(180deg);
+}
 .mega-menu{position:absolute;left:0;right:0;top:112px;height:min(620px,calc(100vh - 112px));background:#fff;display:grid;grid-template-columns:37% 63%;color:var(--ink);visibility:hidden;opacity:0;transform:translateY(-18px);pointer-events:none;transition:opacity .28s,transform .38s,visibility .38s;box-shadow:0 20px 50px #15133138;overflow:hidden}
 .mega-menu.open{visibility:visible;opacity:1;transform:none;pointer-events:auto}
 .mega-rail{background:var(--ink);color:#fff;padding:42px 0 42px 5.35vw;overflow:auto}

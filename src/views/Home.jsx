@@ -5,7 +5,7 @@ import { ChevronRight, ArrowRight, Play, X, ArrowUpRight } from 'lucide-react'
 import { homeContent, serviceGroups, vacancies, newsItems, globalStats } from '../data/mockData'
 import VideoModal from '../components/VideoModal'
 
-const ASSET_BASE = 'https://kent.imgix.net/images/'
+const ASSET_BASE = '/images/'
 const getImage = (name, width = 1600, ratio = '4:3') =>
   `${ASSET_BASE}${name}?q=82&auto=format&fit=crop&crop=focalpoint&w=${width}&ar=${ratio.replace(':', '%3A')}&fp-x=0.5&fp-y=0.5`
 

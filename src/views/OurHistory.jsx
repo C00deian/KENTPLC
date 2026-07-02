@@ -10,7 +10,7 @@ export default function OurHistory() {
     <main className="pt-[76px] lg:pt-[112px] bg-white">
       {/* Page Hero */}
       <section className="bg-[#282554] text-white py-24 px-[5.35vw] relative overflow-hidden">
-        <div className="absolute inset-0 opacity-20 bg-cover bg-center" style={{ backgroundImage: `url(https://kent.imgix.net/images/Planet-transition-optimised_2025-10-13-172356_igkb.jpg?q=82&auto=format&fit=crop&w=1800)` }} />
+        <div className="absolute inset-0 opacity-20 bg-cover bg-center" style={{ backgroundImage: `url(/images/Planet-transition-optimised_2025-10-13-172356_igkb.jpg?q=82&auto=format&fit=crop&w=1800)` }} />
         <div className="absolute inset-0 bg-gradient-to-r from-[#282554] to-[#282554]/60" />
         
         <div className="max-w-4xl relative z-10">

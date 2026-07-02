@@ -12,7 +12,7 @@ export default function MeetOurTeam() {
     <main className="pt-[76px] lg:pt-[112px] bg-white">
       {/* Page Hero */}
       <section className="bg-[#282554] text-white py-24 px-[5.35vw] relative overflow-hidden">
-        <div className="absolute inset-0 opacity-10 bg-cover bg-center" style={{ backgroundImage: `url(https://kent.imgix.net/images/kent-join-us-6.jpg?q=82&auto=format&fit=crop&w=1800)` }} />
+        <div className="absolute inset-0 opacity-10 bg-cover bg-center" style={{ backgroundImage: `url(/images/kent-join-us-6.jpg?q=82&auto=format&fit=crop&w=1800)` }} />
         
         <div className="max-w-4xl relative z-10">
           <span className="text-xs uppercase tracking-widest text-[#ffd52e] font-semibold mb-3 block">
@@ -48,11 +48,11 @@ export default function MeetOurTeam() {
               >
                 <div className="h-[280px] overflow-hidden relative">
                   <img 
-                    src={`https://kent.imgix.net/images/${leader.image}`} 
+                    src={`/images/${leader.image}`} 
                     alt={leader.name}
                     className="w-full h-full object-cover transition duration-500 group-hover:scale-103"
                     onError={(e) => {
-                      e.target.src = 'https://kent.imgix.net/images/videothumb_website-1.jpg'
+                      e.target.src = '/images/videothumb_website-1.jpg'
                     }}
                   />
                   <div className="absolute inset-0 bg-[#282554]/10 group-hover:bg-transparent transition duration-300" />
@@ -101,11 +101,11 @@ export default function MeetOurTeam() {
             <div className="flex flex-col md:flex-row gap-6 md:gap-8 items-start md:items-center mb-6">
               <div className="w-24 h-24 rounded-full overflow-hidden shrink-0">
                 <img 
-                  src={`https://kent.imgix.net/images/${activeLeader.image}`} 
+                  src={`/images/${activeLeader.image}`} 
                   alt={activeLeader.name}
                   className="w-full h-full object-cover"
                   onError={(e) => {
-                    e.target.src = 'https://kent.imgix.net/images/videothumb_website-1.jpg'
+                    e.target.src = '/images/videothumb_website-1.jpg'
                   }}
                 />
               </div>

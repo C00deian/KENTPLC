@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { newsItems } from '../data/mockData'
 import { Search } from 'lucide-react'
 
-const ASSET_BASE = 'https://kent.imgix.net/images/'
+const ASSET_BASE = '/images/'
 const getImage = (name, width = 900) =>
   `${ASSET_BASE}${name}?q=82&auto=format&fit=crop&w=${width}`
 

@@ -113,7 +113,7 @@ export default function Header() {
         {/* Mainnav */}
         <div className="mainnav">
           <Link to="/" className="logo">
-            <img src="https://kentplc.com/dist/images/logo-primary.png" alt="Kent Logo" />
+            <img src="/logo-primary.png" alt="Kent Logo" />
           </Link>
 
           {/* Desktop Links */}
@@ -122,14 +122,14 @@ export default function Header() {
               className={`nav-mega-trigger ${activeMega === 'services' ? 'active' : ''}`}
               onClick={() => handleTriggerClick('services')}
             >
-              Our Services <i>⌄</i>
+              Our Services <i className="fal fa-chevron-down" aria-hidden="true"></i>
             </button>
             
             <button 
               className={`nav-mega-trigger ${activeMega === 'markets' ? 'active' : ''}`}
               onClick={() => handleTriggerClick('markets')}
             >
-              Our Markets <i>⌄</i>
+              Our Markets <i className="fal fa-chevron-down" aria-hidden="true"></i>
             </button>
 
             <Link to="/who-we-are/purpose-beliefs">Kent Data Centres</Link>
@@ -358,7 +358,7 @@ export default function Header() {
               className="fixed inset-y-0 right-0 w-full max-w-[400px] bg-[#282554] text-white z-50 flex flex-col p-8 overflow-y-auto"
             >
               <div className="flex justify-between items-center mb-10">
-                <img src="https://kentplc.com/dist/images/logo-primary.png" alt="Kent" className="h-10 invert brightness-0" />
+                <img src="/logo-primary.png" alt="Kent" className="h-10 invert brightness-0" />
                 <button 
                   onClick={() => setMobileMenuOpen(false)}
                   className="w-11 h-11 border border-white/20 rounded-full flex items-center justify-center hover:bg-white/10 transition"

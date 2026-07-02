@@ -20,7 +20,7 @@ export default function WhoWeAre() {
       <section className="relative h-[480px] text-white flex items-center bg-[#282554] overflow-hidden">
         <div 
           className="absolute inset-0 bg-cover bg-center brightness-75 scale-105"
-          style={{ backgroundImage: `url(https://kent.imgix.net/images/${hero.image}?q=82&auto=format&fit=crop&w=1800)` }}
+          style={{ backgroundImage: `url(/images/${hero.image}?q=82&auto=format&fit=crop&w=1800)` }}
         />
         <div className="absolute inset-0 bg-gradient-to-t from-[#282554] via-[#282554]/40 to-transparent" />
         

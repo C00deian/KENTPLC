@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion'
 import { vacancies } from '../data/mockData'
 import { Search, ArrowRight, ArrowUpRight, Briefcase, MapPin, X, Upload } from 'lucide-react'
 
-const ASSET_BASE = 'https://kent.imgix.net/images/'
+const ASSET_BASE = '/images/'
 const getImage = (name, width = 1600) =>
   `${ASSET_BASE}${name}?q=82&auto=format&fit=crop&w=${width}`
 

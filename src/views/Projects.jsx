@@ -25,7 +25,7 @@ export default function Projects() {
       <section className="relative h-[480px] text-white flex items-center bg-[#282554] overflow-hidden">
         <div 
           className="absolute inset-0 bg-cover bg-center brightness-75 scale-105"
-          style={{ backgroundImage: `url(https://kent.imgix.net/images/Planet-transition-optimised_2025-10-13-172356_igkb.jpg?q=82&auto=format&fit=crop&w=1800)` }}
+          style={{ backgroundImage: `url(/images/Planet-transition-optimised_2025-10-13-172356_igkb.jpg?q=82&auto=format&fit=crop&w=1800)` }}
         />
         <div className="absolute inset-0 bg-gradient-to-t from-[#282554] via-[#282554]/40 to-transparent" />
         
@@ -104,7 +104,7 @@ export default function Projects() {
                 <article key={index} className="bg-white border border-gray-100 flex flex-col hover:shadow-lg transition duration-300 group">
                   <div className="aspect-[16/10] w-full overflow-hidden bg-gray-100 relative">
                     <img 
-                      src={`https://kent.imgix.net/images/${p.image}?q=82&auto=format&fit=crop&w=800&ar=16:10`} 
+                      src={`/images/${p.image}?q=82&auto=format&fit=crop&w=800&ar=16:10`} 
                       alt={p.title} 
                       className="w-full h-full object-cover transition duration-500 group-hover:scale-105"
                     />

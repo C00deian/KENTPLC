@@ -26,7 +26,7 @@ export default function Footer() {
         {/* Footer Top */}
         <div className="footer-top flex flex-col md:flex-row justify-between items-start md:items-end border-b border-[#555277] pb-14">
           <Link to="/" className="w-36 mb-6 md:mb-0">
-            <img src="https://kentplc.com/dist/images/logo-primary.png" alt="Kent logo" className="brightness-0 invert w-full h-auto" />
+            <img src="/logo-primary.png" alt="Kent logo" className="brightness-0 invert w-full h-auto" />
           </Link>
           <span className="text-3xl md:text-5xl font-light tracking-tight text-white/90">
             the energy within.
@@ -42,9 +42,9 @@ export default function Footer() {
             </small>
             <div className="socials flex gap-2.5">
               {footerData.social.map((socialIcon, index) => (
-                <a 
-                  key={index} 
-                  href="#" 
+                <a
+                  key={index}
+                  href="#"
                   onClick={(e) => e.preventDefault()}
                   className="w-10 h-10 border border-[#777491] rounded-full flex items-center justify-center text-sm hover:bg-[#11c5c2] hover:text-[#282554] hover:border-[#11c5c2] transition duration-200"
                 >
@@ -62,8 +62,8 @@ export default function Footer() {
               </small>
               <div className="flex flex-col gap-3">
                 {column.links.map((link) => (
-                  <Link 
-                    key={link.label} 
+                  <Link
+                    key={link.label}
                     to={link.href}
                     className="text-white/80 hover:text-white hover:translate-x-1 transition duration-200 text-[15px]"
                   >
@@ -76,9 +76,9 @@ export default function Footer() {
 
           {/* Back to Top */}
           <div className="flex md:justify-end items-start">
-            <a 
-              href="#" 
-              onClick={handleBackToTop} 
+            <a
+              href="#"
+              onClick={handleBackToTop}
               className="backtop text-[#11c5c2] hover:text-white flex items-center gap-2 font-medium transition"
             >
               Back to Top ↑
@@ -88,12 +88,12 @@ export default function Footer() {
 
         {/* Legal Footer */}
         <div className="legal border-t border-[#555277] pt-6 flex flex-col md:flex-row justify-between items-start md:items-center gap-4 text-xs text-[#b9b7ca]">
-          <span className="md:mr-auto">© Kent {new Date().getFullYear()}</span>
+          <span className="md:mr-auto">© ARKMONT {new Date().getFullYear()}</span>
           <div className="flex flex-wrap gap-4 md:gap-7">
             {footerData.legal.map((link) => (
-              <a 
-                key={link} 
-                href="#" 
+              <a
+                key={link}
+                href="#"
                 onClick={(e) => e.preventDefault()}
                 className="hover:underline hover:text-white transition"
               >
@@ -122,8 +122,8 @@ export default function Footer() {
             By using our website you consent to all cookies in accordance with our{' '}
             <u className="cursor-pointer hover:text-gray-300">Privacy Policy</u>.
           </span>
-          <button 
-            onClick={() => setCookieDismissed(true)} 
+          <button
+            onClick={() => setCookieDismissed(true)}
             className="text-white hover:text-gray-300 text-lg font-light pl-4 cursor-pointer focus:outline-none"
             aria-label="Close cookies banner"
           >

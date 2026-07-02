@@ -3,7 +3,7 @@ import {
   homeContent, globalStats, footerData
 } from '../data/siteData.js'
 
-const ASSET_BASE = 'https://kent.imgix.net/images/'
+const ASSET_BASE = '/images/'
 const image = (name, width = 1600, ratio = '4:3') =>
   `${ASSET_BASE}${name}?q=82&auto=format&fit=crop&crop=focalpoint&w=${width}&ar=${ratio.replace(':', '%3A')}&fp-x=0.5&fp-y=0.5`
 const slug = value => value.toLowerCase().replace(/&/g, 'and').replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '')

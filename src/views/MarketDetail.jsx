@@ -53,7 +53,7 @@ export default function MarketDetail() {
 
   const groupSlug = slugify(activeGroup.title)
   const bgImageName = heroImages[groupSlug] || 'kent-production-1-1_2025-10-13-172336_pslr.jpg'
-  const bgUrl = `https://kent.imgix.net/images/${bgImageName}?q=82&auto=format&fit=crop&w=1800`
+  const bgUrl = `/images/${bgImageName}?q=82&auto=format&fit=crop&w=1800`
 
   return (
     <main className="pt-[76px] lg:pt-[112px] bg-white">
