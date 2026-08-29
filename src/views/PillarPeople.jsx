@@ -7,10 +7,7 @@ export default function PillarPeople() {
     <main className="pt-[76px] lg:pt-[112px] bg-white">
       {/* Page Hero */}
       <section className="bg-[#282554] text-white py-24 px-[5.35vw] relative overflow-hidden">
-        <div className="absolute right-0 bottom-0 opacity-10 pointer-events-none text-[30vw] font-bold text-white select-none leading-none translate-y-12">
-          P
-        </div>
-        
+
         <div className="max-w-4xl relative z-10">
           <span className="text-xs uppercase tracking-widest text-[#ffd52e] font-semibold mb-3 block">
             Sustainability Pillar 01
@@ -19,7 +16,7 @@ export default function PillarPeople() {
             People First
           </h1>
           <p className="text-lg md:text-2xl font-light text-white/90 leading-relaxed max-w-3xl">
-            Providing a safe, inclusive, and collaborative environment where our 13,000+ colleagues can thrive.
+            Providing a safe, inclusive, and collaborative environment where our 100+ colleagues can thrive.
           </p>
         </div>
       </section>

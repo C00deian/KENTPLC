@@ -25,7 +25,7 @@ export default function NewsInsights() {
       <section className="bg-[#282554] text-white py-20 px-[5.35vw] relative overflow-hidden">
         <div className="max-w-4xl relative z-10">
           <span className="text-xs uppercase tracking-widest text-[#ffd52e] font-semibold mb-3 block">
-            Kent Media
+            Arkmont Media
           </span>
           <h1 className="text-4xl md:text-6xl font-bold tracking-tight mb-6">
             News &amp; Insights
@@ -80,18 +80,6 @@ export default function NewsInsights() {
                   key={idx}
                   className="bg-white rounded overflow-hidden shadow-sm hover:shadow-md transition duration-300 flex flex-col group cursor-pointer"
                 >
-                  <div className="h-[240px] overflow-hidden relative">
-                    <img 
-                      src={getImage(news.image)} 
-                      alt={news.title}
-                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-103"
-                      onError={(e) => {
-                        e.target.src = getImage('videothumb_website-1.jpg')
-                      }}
-                    />
-                    <div className="absolute inset-0 bg-[#282554]/10" />
-                  </div>
-
                   <div className="p-8 flex flex-col justify-between flex-grow">
                     <div>
                       <small className="text-[#6f6d85] text-xs uppercase tracking-wider font-semibold block mb-3">

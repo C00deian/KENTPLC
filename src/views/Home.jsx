@@ -123,7 +123,7 @@ export default function Home() {
           >
             <img 
               src={getImage('videothumb_website-1.jpg', 1800, '16:9')} 
-              alt="Kent people" 
+              alt="Arkmont people"
             />
             <span className="play">▶</span>
             <small>Play our film</small>
@@ -135,8 +135,8 @@ export default function Home() {
           <div className="what-grid">
             <div className="what-image reveal">
               <img 
-                src={getImage('kent-production-1-1_2025-10-13-172336_pslr.jpg', 1200, '3:4')} 
-                alt="Kent engineer" 
+                src={getImage('arkmont-production-1-1_2025-10-13-172336_pslr.jpg', 1200, '3:4')}
+                alt="Arkmont engineer"
               />
             </div>
             <div className="what-copy reveal">
@@ -183,7 +183,7 @@ export default function Home() {
           </div>
           <div className="transition-img reveal">
             <img 
-              src={getImage('Planet-transition-optimised_2025-10-13-172356_igkb.jpg', 1600, '4:3')} 
+              src={getImage('arkmont-production-1-1_2025-10-13-172336_pslr.jpg', 1600, '4:3')}
               alt="Energy transition landscape" 
             />
           </div>
@@ -224,8 +224,8 @@ export default function Home() {
         <section className="careers" id="careers">
           <div className="career-photo">
             <img 
-              src={getImage('kent-join-us-6.jpg', 1600, '4:3')} 
-              alt="Kent colleagues" 
+              src={getImage('arkmont-production-1-1_2025-10-13-172336_pslr.jpg', 1600, '4:3')}
+              alt="Arkmont colleagues"
             />
           </div>
           <div className="career-copy reveal">
@@ -242,7 +242,7 @@ export default function Home() {
           <div className="vacancies">
             <div className="vacancy-heading">
               <span className="eyebrow yellow">Our Latest Vacancies</span>
-              <h2>Find your place at Kent</h2>
+              <h2>Find your place at Arkmont</h2>
             </div>
 
             <form onSubmit={handleJobSearch} className="job-filters">
@@ -335,7 +335,7 @@ export default function Home() {
         <section className="latest section-pad" id="news">
           <div className="latest-head reveal">
             <div>
-              <span className="eyebrow">Kent</span>
+              <span className="eyebrow">Arkmont</span>
               <h2>Latest News & Insights</h2>
             </div>
             <div className="arrows">

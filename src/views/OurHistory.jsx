@@ -10,7 +10,7 @@ export default function OurHistory() {
     <main className="pt-[76px] lg:pt-[112px] bg-white">
       {/* Page Hero */}
       <section className="bg-[#282554] text-white py-24 px-[5.35vw] relative overflow-hidden">
-        <div className="absolute inset-0 opacity-20 bg-cover bg-center" style={{ backgroundImage: `url(/images/Planet-transition-optimised_2025-10-13-172356_igkb.jpg?q=82&auto=format&fit=crop&w=1800)` }} />
+        <div className="absolute inset-0 opacity-20 bg-cover bg-center" style={{ backgroundImage: `url(/images/arkmont-power-plant.jpg?q=82&auto=format&fit=crop&w=1800)` }} />
         <div className="absolute inset-0 bg-gradient-to-r from-[#282554] to-[#282554]/60" />
         
         <div className="max-w-4xl relative z-10">
@@ -32,7 +32,7 @@ export default function OurHistory() {
           A Century of Innovation
         </h2>
         <p className="text-gray-600 text-lg leading-relaxed font-light mb-6">
-          From our founding in 1919 as a local utilities engineering company, Kent has grown through dedication, expert engineering, and key strategic acquisitions. Today, we stand as one of the largest engineering and project management companies in the energy industry, maintaining values of agility and safety.
+          From our founding in 1919 as a local utilities engineering company, Arkmont has grown through dedication, expert engineering, and key strategic acquisitions. Today, we stand as one of the largest engineering and project management companies in the energy industry, maintaining values of agility and safety.
         </p>
       </section>
 

@@ -25,7 +25,7 @@ export default function Projects() {
       <section className="relative h-[480px] text-white flex items-center bg-[#282554] overflow-hidden">
         <div 
           className="absolute inset-0 bg-cover bg-center brightness-75 scale-105"
-          style={{ backgroundImage: `url(/images/Planet-transition-optimised_2025-10-13-172356_igkb.jpg?q=82&auto=format&fit=crop&w=1800)` }}
+          style={{ backgroundImage: `url(/images/arkmont-production-1-1_2025-10-13-172336_pslr.jpg?q=82&auto=format&fit=crop&w=1800)` }}
         />
         <div className="absolute inset-0 bg-gradient-to-t from-[#282554] via-[#282554]/40 to-transparent" />
         

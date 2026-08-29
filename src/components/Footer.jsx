@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
-import { footerData } from '../data/mockData'
-import { ArrowUp } from 'lucide-react'
+import { footerData, corporateDetails } from '../data/mockData'
+import { ArrowUp, Mail, MapPin, Building2, Globe2 } from 'lucide-react'
 
 export default function Footer() {
   const [cookieDismissed, setCookieDismissed] = useState(false)
@@ -22,84 +22,121 @@ export default function Footer() {
 
   return (
     <>
-      <footer id="contact" className="bg-[#211f49] text-white pt-20 px-[5.35vw] pb-6 relative z-10">
-        {/* Footer Top */}
-        <div className="footer-top flex flex-col md:flex-row justify-between items-start md:items-end border-b border-[#555277] pb-14">
-          <Link to="/" className="w-36 mb-6 md:mb-0">
-            <img src="/logo-primary.png" alt="Kent logo" className="brightness-0 invert w-full h-auto" />
-          </Link>
-          <span className="text-3xl md:text-5xl font-light tracking-tight text-white/90">
-            the energy within.
-          </span>
-        </div>
+      <footer id="contact" className="bg-[#1a1935] text-white pt-20 px-[5.35vw] pb-6 relative z-10 border-t border-white/5">
+        {/* Main Footer Layout Inspired by Provided Image */}
+        <div className="max-w-7xl mx-auto flex flex-col gap-16">
 
-        {/* Footer Grid */}
-        <div className="footer-grid grid grid-cols-1 md:grid-cols-4 gap-10 md:gap-6 py-16">
-          {/* Social Links */}
-          <div>
-            <small className="text-[#11c5c2] uppercase tracking-wider font-semibold text-xs block mb-6">
-              Follow Us
-            </small>
-            <div className="socials flex gap-2.5">
-              {footerData.social.map((socialIcon, index) => (
-                <a
-                  key={index}
-                  href="#"
-                  onClick={(e) => e.preventDefault()}
-                  className="w-10 h-10 border border-[#777491] rounded-full flex items-center justify-center text-sm hover:bg-[#11c5c2] hover:text-[#282554] hover:border-[#11c5c2] transition duration-200"
-                >
-                  {socialIcon}
-                </a>
-              ))}
+          <div className="grid grid-cols-1 lg:grid-cols-[1.2fr_0.8fr_0.8fr_1fr] gap-12 lg:gap-8 items-start">
+
+            {/* 1. Corporate Details Card */}
+            <div className="bg-[#2b2859] p-8 rounded-2xl shadow-xl border border-[#454268]">
+              <div className="flex items-center gap-3 mb-8">
+                <Building2 className="w-6 h-6 text-[#11c5c2]" />
+                <h2 className="text-xl font-bold tracking-tight">Corporate details</h2>
+              </div>
+
+              <div className="flex flex-col gap-6 text-sm">
+                <div>
+                  <span className="text-[#c5c3d4] block mb-1 uppercase text-[10px] tracking-widest font-bold">Full Legal Name</span>
+                  <p className="font-semibold text-lg leading-tight">{corporateDetails.legalName}</p>
+                </div>
+
+                <div>
+                  <span className="text-[#c5c3d4] block mb-1 uppercase text-[10px] tracking-widest font-bold">CIN</span>
+                  <p className="font-medium tracking-widest text-[#11c5c2]">{corporateDetails.cin}</p>
+                </div>
+
+                <div className="flex gap-4">
+                  <MapPin className="w-5 h-5 text-[#11c5c2] shrink-0 mt-1" />
+                  <div>
+                    <p className="leading-relaxed text-[#f5f4f0]">
+                      {corporateDetails.address}
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex items-center gap-4 border-t border-white/10 pt-4">
+                  <Mail className="w-5 h-5 text-[#ffd52e] shrink-0" />
+                  <a href={`mailto:${corporateDetails.email}`} className="hover:text-[#11c5c2] transition text-[#c5c3d4] font-medium">
+                    {corporateDetails.email}
+                  </a>
+                </div>
+              </div>
             </div>
-          </div>
 
-          {/* Columns */}
-          {footerData.columns.map((column) => (
-            <div key={column.title}>
-              <small className="text-[#11c5c2] uppercase tracking-wider font-semibold text-xs block mb-6">
-                {column.title}
-              </small>
-              <div className="flex flex-col gap-3">
-                {column.links.map((link) => (
-                  <Link
-                    key={link.label}
-                    to={link.href}
-                    className="text-white/80 hover:text-white hover:translate-x-1 transition duration-200 text-[15px]"
+            {/* 2. Quick Links */}
+            <div>
+              <h3 className="text-[#11c5c2] uppercase tracking-[0.2em] font-bold text-xs mb-8">
+                Quick Links
+              </h3>
+              <div className="flex flex-col gap-4">
+                <Link to="/#services" className="text-[#c5c3d4] hover:text-white transition">Services</Link>
+                <Link to="/#transition" className="text-[#c5c3d4] hover:text-white transition">Industries</Link>
+                <Link to="/projects" className="text-[#c5c3d4] hover:text-white transition">Projects</Link>
+                <Link to="/sustainability" className="text-[#c5c3d4] hover:text-white transition">HSE & Quality</Link>
+                <Link to="/contact-us" className="text-[#c5c3d4] hover:text-white transition">Contact</Link>
+              </div>
+            </div>
+
+            {/* 3. Office Locations */}
+            <div>
+              <h3 className="text-[#11c5c2] uppercase tracking-[0.2em] font-bold text-xs mb-8">
+                Office Locations
+              </h3>
+              <div className="flex flex-col gap-1">
+                <p className="font-bold text-lg text-white mb-2">Gomati Nagar Lucknow</p>
+                <span className="text-[#c5c3d4] text-sm font-medium">Main Office</span>
+                <div className="mt-4 flex items-center gap-2 text-xs text-[#6e6b91]">
+                   <Globe2 className="w-4 h-4" />
+                   <span>Lucknow, Uttar Pradesh, India</span>
+                </div>
+              </div>
+            </div>
+
+            {/* 4. Branding & Follow */}
+            <div className="flex flex-col items-start lg:items-end text-left lg:text-right gap-8">
+              <Link to="/" className="w-44 brightness-0 invert opacity-90 hover:opacity-100 transition">
+                <img src="/logo-primary.png" alt="Arkmont logo" className="w-full h-auto" />
+              </Link>
+              <p className="text-[#c5c3d4] text-lg font-light tracking-tight max-w-[280px]">
+                 Precision in Commissioning, Excellence in Automation.
+              </p>
+
+              <div className="flex gap-3">
+                {footerData.social.map((socialIcon, index) => (
+                  <a
+                    key={index}
+                    href="#"
+                    onClick={(e) => e.preventDefault()}
+                    className="w-10 h-10 bg-white/5 border border-white/10 rounded-full flex items-center justify-center text-sm hover:bg-[#11c5c2] hover:text-[#282554] hover:border-[#11c5c2] transition duration-300"
                   >
-                    {link.label}
-                  </Link>
+                    {socialIcon}
+                  </a>
                 ))}
               </div>
             </div>
-          ))}
 
-          {/* Back to Top */}
-          <div className="flex md:justify-end items-start">
-            <a
-              href="#"
-              onClick={handleBackToTop}
-              className="backtop text-[#11c5c2] hover:text-white flex items-center gap-2 font-medium transition"
-            >
-              Back to Top ↑
-            </a>
           </div>
-        </div>
 
-        {/* Legal Footer */}
-        <div className="legal border-t border-[#555277] pt-6 flex flex-col md:flex-row justify-between items-start md:items-center gap-4 text-xs text-[#b9b7ca]">
-          <span className="md:mr-auto">© ARKMONT {new Date().getFullYear()}</span>
-          <div className="flex flex-wrap gap-4 md:gap-7">
-            {footerData.legal.map((link) => (
-              <a
-                key={link}
-                href="#"
-                onClick={(e) => e.preventDefault()}
-                className="hover:underline hover:text-white transition"
-              >
-                {link}
+          {/* Bottom Legal Section */}
+          <div className="border-t border-white/10 pt-8 pb-4 flex flex-col md:flex-row justify-between items-center gap-6 text-[11px] text-[#6e6b91] font-medium tracking-wide">
+            <span className="order-2 md:order-1 uppercase">© {new Date().getFullYear()} ARKMONT TECHNOLOGY PRIVATE LIMITED. ALL RIGHTS RESERVED.</span>
+
+            <div className="flex flex-wrap justify-center gap-6 md:gap-10 order-1 md:order-2 uppercase">
+              {footerData.legal.map((link) => (
+                <a
+                  key={link}
+                  href="#"
+                  onClick={(e) => e.preventDefault()}
+                  className="hover:text-white transition"
+                >
+                  {link}
+                </a>
+              ))}
+              <a href="#" onClick={handleBackToTop} className="text-[#11c5c2] hover:text-white transition">
+                Back to Top ↑
               </a>
-            ))}
+            </div>
           </div>
         </div>
       </footer>
@@ -108,7 +145,7 @@ export default function Footer() {
       {showBackToTop && (
         <button
           onClick={handleBackToTop}
-          className="fixed bottom-6 right-6 w-12 h-12 md:w-14 md:h-14 bg-[#11c5c2] text-[#282554] rounded-full flex items-center justify-center shadow-lg cursor-pointer hover:scale-110 active:scale-95 transition z-40"
+          className="fixed bottom-6 right-6 w-12 h-12 md:w-14 md:h-14 bg-[#11c5c2] text-[#282554] rounded-full flex items-center justify-center shadow-2xl cursor-pointer hover:scale-110 active:scale-95 transition z-40"
           aria-label="Back to top"
         >
           <ArrowUp className="w-5 h-5 md:w-6 md:h-6" />
@@ -117,14 +154,14 @@ export default function Footer() {
 
       {/* Cookie Banner */}
       {!cookieDismissed && (
-        <div className="cookie fixed bottom-4 left-1/2 -translate-x-1/2 bg-[#141331] text-white px-5 py-3.5 rounded shadow-xl flex items-center justify-between text-xs z-50 w-[calc(100%-24px)] md:w-auto min-w-[320px] md:min-w-[450px]">
-          <span className="leading-relaxed">
+        <div className="cookie fixed bottom-4 left-1/2 -translate-x-1/2 bg-[#141331] text-white px-6 py-4 rounded-xl shadow-[0_20px_50px_rgba(0,0,0,0.3)] flex items-center justify-between text-xs z-50 w-[calc(100%-32px)] md:w-auto min-w-[320px] md:min-w-[500px] border border-white/5 backdrop-blur-md">
+          <span className="leading-relaxed text-[#c5c3d4]">
             By using our website you consent to all cookies in accordance with our{' '}
-            <u className="cursor-pointer hover:text-gray-300">Privacy Policy</u>.
+            <u className="cursor-pointer hover:text-white">Privacy Policy</u>.
           </span>
           <button
             onClick={() => setCookieDismissed(true)}
-            className="text-white hover:text-gray-300 text-lg font-light pl-4 cursor-pointer focus:outline-none"
+            className="text-white hover:text-[#11c5c2] text-2xl font-light pl-6 cursor-pointer focus:outline-none"
             aria-label="Close cookies banner"
           >
             ×

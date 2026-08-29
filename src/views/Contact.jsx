@@ -1,9 +1,8 @@
 import React, { useState } from 'react'
-import { officesData } from '../data/mockData'
-import { Phone, MapPin, Send } from 'lucide-react'
+import { officesData, corporateDetails } from '../data/mockData'
+import { Phone, MapPin, Send, Mail, Building2 } from 'lucide-react'
 
 export default function Contact() {
-  const [selectedRegion, setSelectedRegion] = useState(officesData[0].region)
   const [inquirySubmitted, setInquirySubmitted] = useState(false)
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
@@ -20,8 +19,6 @@ export default function Contact() {
       setInquirySubmitted(false)
     }, 500)
   }
-
-  const activeRegionData = officesData.find(r => r.region === selectedRegion) || officesData[0]
 
   return (
     <main className="pt-[76px] lg:pt-[112px] bg-white">
@@ -98,53 +95,55 @@ export default function Contact() {
           </form>
         </div>
 
-        {/* Office locator */}
-        <div>
-          <h2 className="text-2xl md:text-3xl font-bold text-[#282554] mb-8">
-            Office Locator
-          </h2>
+        {/* Office locator & Corporate Details */}
+        <div className="flex flex-col gap-12">
+          {/* Corporate Details Card (from image) */}
+          <div className="bg-[#2b2859] text-white p-8 rounded-xl shadow-lg border border-[#454268]">
+            <div className="flex items-center gap-3 mb-6">
+              <Building2 className="w-6 h-6 text-[#ffd52e]" />
+              <h2 className="text-xl font-bold">Corporate details</h2>
+            </div>
 
-          {/* Region Tabs */}
-          <div className="flex gap-2 border-b border-gray-200 pb-4 mb-8 overflow-x-auto">
-            {officesData.map(reg => (
-              <button
-                key={reg.region}
-                onClick={() => setSelectedRegion(reg.region)}
-                className={`px-4 py-2 text-sm font-semibold transition shrink-0 cursor-pointer border-b-2 ${
-                  selectedRegion === reg.region 
-                    ? 'border-[#11c5c2] text-[#11c5c2]' 
-                    : 'border-transparent text-gray-500 hover:text-[#282554]'
-                }`}
-              >
-                {reg.region}
-              </button>
-            ))}
-          </div>
+            <div className="flex flex-col gap-6 text-sm">
+              <div>
+                <span className="text-[#c5c3d4] block mb-1">Full Legal Name</span>
+                <p className="font-semibold text-lg">{corporateDetails.legalName}</p>
+              </div>
 
-          {/* Region Offices List */}
-          <div className="flex flex-col gap-6">
-            {activeRegionData.offices.map(office => (
-              <div 
-                key={office.city}
-                className="bg-[#f5f4f0] p-6 rounded border border-gray-100 flex flex-col gap-3"
-              >
-                <h3 className="text-xl font-semibold text-[#282554]">
-                  {office.city}, {office.country}
-                </h3>
-                
-                <div className="flex items-start gap-2.5 text-sm text-gray-600">
-                  <MapPin className="w-4 h-4 text-[#11c5c2] shrink-0 mt-0.5" />
-                  <span>{office.address}</span>
-                </div>
+              <div>
+                <span className="text-[#c5c3d4] block mb-1">CIN</span>
+                <p className="font-medium tracking-wider">{corporateDetails.cin}</p>
+              </div>
 
-                <div className="flex items-center gap-2.5 text-sm text-gray-600">
-                  <Phone className="w-4 h-4 text-[#11c5c2] shrink-0" />
-                  <a href={`tel:${office.phone.replace(/\s+/g, '')}`} className="hover:underline hover:text-[#11c5c2]">
-                    {office.phone}
-                  </a>
+              <div className="flex gap-4">
+                <MapPin className="w-5 h-5 text-[#11c5c2] shrink-0 mt-1" />
+                <div>
+                  <p className="leading-relaxed">
+                    {corporateDetails.address}
+                  </p>
                 </div>
               </div>
-            ))}
+
+              <div className="flex items-center gap-4">
+                <Mail className="w-5 h-5 text-[#11c5c2] shrink-0" />
+                <a href={`mailto:${corporateDetails.email}`} className="hover:text-[#11c5c2] transition">
+                  {corporateDetails.email}
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <h2 className="text-2xl md:text-3xl font-bold text-[#282554] mb-8">
+              Office Location
+            </h2>
+            <div className="bg-[#f5f4f0] p-8 rounded-lg border border-gray-100">
+               <h3 className="text-xl font-bold text-[#282554] mb-4">Gomati Nagar Lucknow (Main Office)</h3>
+               <div className="flex items-start gap-3 text-gray-600">
+                  <MapPin className="w-5 h-5 text-[#11c5c2] shrink-0 mt-1" />
+                  <p>{corporateDetails.address}</p>
+               </div>
+            </div>
           </div>
         </div>
       </section>

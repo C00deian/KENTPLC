@@ -122,7 +122,7 @@ position:relative;
 .hero-bg {
     position:absolute;
 inset:0;
-    background:url("https://kent.imgix.net/images/Hero-01.jpg?q=82&auto=format&fit=crop&crop=focalpoint&w=2200&ar=16%3A9&fp-x=0.5&fp-y=0.5") center/cover;
+    background:url("https://arkmont.imgix.net/images/Hero-01.jpg?q=82&auto=format&fit=crop&crop=focalpoint&w=2200&ar=16%3A9&fp-x=0.5&fp-y=0.5") center/cover;
     animation:heroZoom 14s ease-out both}
 .hero-shade {
     position:absolute;

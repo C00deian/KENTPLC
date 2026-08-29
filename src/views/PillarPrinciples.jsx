@@ -7,10 +7,7 @@ export default function PillarPrinciples() {
     <main className="pt-[76px] lg:pt-[112px] bg-white">
       {/* Page Hero */}
       <section className="bg-[#282554] text-white py-24 px-[5.35vw] relative overflow-hidden">
-        <div className="absolute right-0 bottom-0 opacity-10 pointer-events-none text-[30vw] font-bold text-white select-none leading-none translate-y-12">
-          G
-        </div>
-        
+
         <div className="max-w-4xl relative z-10">
           <span className="text-xs uppercase tracking-widest text-[#ffd52e] font-semibold mb-3 block">
             Sustainability Pillar 03

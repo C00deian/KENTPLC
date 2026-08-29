@@ -12,7 +12,7 @@ export default function MeetOurTeam() {
     <main className="pt-[76px] lg:pt-[112px] bg-white">
       {/* Page Hero */}
       <section className="bg-[#282554] text-white py-24 px-[5.35vw] relative overflow-hidden">
-        <div className="absolute inset-0 opacity-10 bg-cover bg-center" style={{ backgroundImage: `url(/images/kent-join-us-6.jpg?q=82&auto=format&fit=crop&w=1800)` }} />
+        <div className="absolute inset-0 opacity-10 bg-cover bg-center" style={{ backgroundImage: `url(/images/arkmont-power-plant.jpg?q=82&auto=format&fit=crop&w=1800)` }} />
         
         <div className="max-w-4xl relative z-10">
           <span className="text-xs uppercase tracking-widest text-[#ffd52e] font-semibold mb-3 block">

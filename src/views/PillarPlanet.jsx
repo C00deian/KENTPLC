@@ -7,10 +7,7 @@ export default function PillarPlanet() {
     <main className="pt-[76px] lg:pt-[112px] bg-white">
       {/* Page Hero */}
       <section className="bg-[#282554] text-white py-24 px-[5.35vw] relative overflow-hidden">
-        <div className="absolute right-0 bottom-0 opacity-10 pointer-events-none text-[30vw] font-bold text-white select-none leading-none translate-y-12">
-          E
-        </div>
-        
+
         <div className="max-w-4xl relative z-10">
           <span className="text-xs uppercase tracking-widest text-[#ffd52e] font-semibold mb-3 block">
             Sustainability Pillar 02
@@ -60,7 +57,7 @@ export default function PillarPlanet() {
               <Globe className="w-8 h-8 text-[#11c5c2] mt-1 shrink-0" />
               <div>
                 <h3 className="text-xl font-bold text-[#282554] mb-1">Targeting Net-Zero</h3>
-                <p className="text-gray-500 text-sm leading-relaxed font-light">Under our 'Sustainability. by Kent' strategy, we aim for Net-Zero scope 1 and scope 2 emissions by 2030.</p>
+                <p className="text-gray-500 text-sm leading-relaxed font-light">Under our 'Sustainability. by Arkmont' strategy, we aim for Net-Zero scope 1 and scope 2 emissions by 2030.</p>
               </div>
             </div>
           </div>

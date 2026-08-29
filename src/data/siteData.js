@@ -1,6 +1,6 @@
 export const topNavigation = [
   { label: 'Who We Are', href: '#who' },
-  { label: 'Sustainability. by Kent', href: '#transition' },
+  { label: 'Sustainability. by Arkmont', href: '#transition' },
   { label: 'News & Insights', href: '#news' },
   { label: 'Events', href: '#events' },
   { label: 'Careers', href: '#careers', active: true }
@@ -23,32 +23,26 @@ export const marketGroups = [
 ]
 
 export const vacancies = [
-  ['Construction Coordinator', 'Saint John', 'Canada', 'Project Management'],
-  ['Summer Operations Intern', 'Sarnia', 'Canada', 'Engineering'],
-  ['Procurement Quality Control Supervisor', 'Woking', 'United Kingdom', 'Project Management'],
-  ['Senior Cost Controller - Outside IR35', 'Woking', 'United Kingdom', 'Project Controls'],
-  ['Principal Electrical Engineer', 'Houston', 'United States', 'Engineering'],
-  ['Senior Telecom Engineer', 'Sherwood Park', 'Canada', 'Engineering'],
-  ['Senior Analyzer Engineer', 'Calgary', 'Canada', 'Engineering'],
-  ['Engineering Manager', 'Corpus Christi', 'United States', 'Project Management'],
-  ['Financial Cost Controller', 'Mumbai', 'India', 'Finance'],
-  ['Project Controls Assistant', 'Houston', 'United States', 'Project Controls'],
-  ['Senior Designer - Instrumentation', 'Mumbai', 'India', 'Engineering'],
-  ['Senior HSSE Specialist', 'Lytton', 'Australia', 'Engineering'],
-  ['Master Piping Designer', 'Bogota', 'Colombia', 'Engineering'],
-  ['Civil Coordinator', 'Luanda', 'Angola', 'Project Management']
+  ['Commissioning Engineer', 'Lucknow', 'India', 'Engineering'],
+  ['Automation Specialist', 'Lucknow', 'India', 'Engineering'],
+  ['Project Coordinator', 'Lucknow', 'India', 'Project Management'],
+  ['Senior Cost Controller', 'Lucknow', 'India', 'Project Controls'],
+  ['Electrical Engineer', 'Lucknow', 'India', 'Engineering'],
+  ['IT Support Intern', 'Lucknow', 'India', 'IT'],
+  ['HR Manager', 'Lucknow', 'India', 'Human Resources'],
+  ['Financial Analyst', 'Lucknow', 'India', 'Finance']
 ].map(([title, city, country, category]) => ({ title, city, country, category }))
 
 export const newsItems = [
-  ['Press Releases & Featured Stories', 'Kent awarded Owner’s Engineer contract for Buchan Offshore Wind Project', 'Kent supports the Buchan Offshore Wind Project as Owner’s Engineer', 'Buchan-Offshore-Wind-Project.jpg'],
+  ['Press Releases & Featured Stories', 'Arkmont awarded Owner’s Engineer contract for Buchan Offshore Wind Project', 'Arkmont supports the Buchan Offshore Wind Project as Owner’s Engineer', 'arkmont-production-1-1_2025-10-13-172336_pslr.jpg'],
   ['Insights & Opinions', 'The GCC’s AI race will be won on infrastructure', 'How evolving technology has created a new infrastructure challenge in the GCC.', 'Data-Centres-Middle-East.jpg'],
-  ['Project News', 'Kent awarded Construction Management Services contract by CABGOC in Angola', 'Kent strengthens its relationship with CABGOC through integrated construction management.', 'Angola-hero.jpg'],
-  ['Events & Awards', "Kent recognised as 'Best in Class' at Safety Excellence Awards", 'Our Americas team celebrates a major safety award.', 'Safety-award.jpg']
+  ['Project News', 'Arkmont awarded Construction Management Services contract by CABGOC in Angola', 'Arkmont strengthens its relationship with CABGOC through integrated construction management.', 'arkmont-production-1-1_2025-10-13-172336_pslr.jpg'],
+  ['Events & Awards', "Arkmont recognised as 'Best in Class' at Safety Excellence Awards", 'Our Americas team celebrates a major safety award.', 'Safety-award.jpg']
 ]
 
 export const homeContent = {
   hero: {
-    eyebrow: 'We are Kent',
+    eyebrow: 'We are Arkmont',
     title: 'The energy within.',
     paragraphs: [
       'We design, build, commission, maintain and optimise the energy assets that keep the world moving.',
@@ -83,16 +77,16 @@ export const homeContent = {
     body: 'We have delivered projects in over 88 countries, thriving on tackling new and challenging territories for our clients across the globe. Wherever you operate, we speak your language to get your problems solved faster.'
   },
   careers: {
-    eyebrow: 'Working for Kent',
+    eyebrow: 'Working for Arkmont',
     title: 'Our people are our most valuable asset',
     body: 'If you have world class ambitions to reach the stars while keeping your feet on the ground, we’re the team for you. We offer career paths in more markets and more sectors than ever before.'
   }
 }
 
 export const globalStats = [
-  { value: '13,000+', label: 'Employees' },
-  { value: '88+', label: 'Project Locations' },
-  { value: '34', label: 'Countries' },
+  { value: '100+', label: 'Employees' },
+  { value: '5+', label: 'Project Locations' },
+  { value: '2+', label: 'Countries' },
   { value: '0', label: 'Barriers' }
 ]
 

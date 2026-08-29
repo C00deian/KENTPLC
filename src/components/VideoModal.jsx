@@ -34,7 +34,7 @@ export default function VideoModal({ isOpen, onClose }) {
             {/* Video Aspect Ratio Wrapper */}
             <div className="relative aspect-video w-full">
               <iframe
-                title="Kent Purpose Video"
+                title="Arkmont Purpose Video"
                 src="https://player.vimeo.com/video/586326416?autoplay=1&title=0&byline=0&portrait=0"
                 className="absolute inset-0 w-full h-full border-none"
                 allow="autoplay; fullscreen; picture-in-picture"

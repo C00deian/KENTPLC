@@ -45,16 +45,16 @@ export default function ServiceDetail() {
 
   // Hero backgrounds map for mock visuals
   const heroImages = {
-    'advisory-consulting': 'kent-production-1-1_2025-10-13-172336_pslr.jpg',
-    'engineering-project-delivery': 'Angola-hero.jpg',
+    'advisory-consulting': 'arkmont-production-1-1_2025-10-13-172336_pslr.jpg',
+    'engineering-project-delivery': 'arkmont-production-1-1_2025-10-13-172336_pslr.jpg',
     'completions-commissioning-start-up': 'Safety-award.jpg',
     'asset-performance-optimisation': 'Data-Centres-Middle-East.jpg',
-    'late-life-management-decommissioning': 'Planet-transition-optimised_2025-10-13-172356_igkb.jpg',
-    'training-competency': 'Buchan-Offshore-Wind-Project.jpg'
+    'late-life-management-decommissioning': 'arkmont-production-1-1_2025-10-13-172336_pslr.jpg',
+    'training-competency': 'arkmont-production-1-1_2025-10-13-172336_pslr.jpg'
   }
 
   const groupSlug = slugify(activeGroup.title)
-  const bgImageName = heroImages[groupSlug] || 'kent-production-1-1_2025-10-13-172336_pslr.jpg'
+  const bgImageName = heroImages[groupSlug] || 'arkmont-production-1-1_2025-10-13-172336_pslr.jpg'
   const bgUrl = `/images/${bgImageName}?q=82&auto=format&fit=crop&w=1800`
 
   return (

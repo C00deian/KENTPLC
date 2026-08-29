@@ -113,7 +113,7 @@ export default function Header() {
         {/* Mainnav */}
         <div className="mainnav">
           <Link to="/" className="logo">
-            <img src="/logo-primary.png" alt="Kent Logo" />
+            <img src="/logo-primary.png" alt="Arkmont Logo" />
           </Link>
 
           {/* Desktop Links */}
@@ -132,7 +132,7 @@ export default function Header() {
               Our Markets <i className="fal fa-chevron-down" aria-hidden="true"></i>
             </button>
 
-            <Link to="/who-we-are/purpose-beliefs">Kent Data Centres</Link>
+            <Link to="/who-we-are/purpose-beliefs">Arkmont Data Centres</Link>
             <Link to="/projects">Our Projects</Link>
           </nav>
 
@@ -321,7 +321,7 @@ export default function Header() {
               </button>
               
               <div className="w-full max-w-3xl text-center">
-                <h2 className="text-3xl text-white font-medium mb-6">Search Kent</h2>
+                <h2 className="text-3xl text-white font-medium mb-6">Search Arkmont</h2>
                 <form 
                   onSubmit={(e) => {
                     e.preventDefault()
@@ -358,7 +358,7 @@ export default function Header() {
               className="fixed inset-y-0 right-0 w-full max-w-[400px] bg-[#282554] text-white z-50 flex flex-col p-8 overflow-y-auto"
             >
               <div className="flex justify-between items-center mb-10">
-                <img src="/logo-primary.png" alt="Kent" className="h-10 invert brightness-0" />
+                <img src="/logo-primary.png" alt="Arkmont" className="h-10 invert brightness-0" />
                 <button 
                   onClick={() => setMobileMenuOpen(false)}
                   className="w-11 h-11 border border-white/20 rounded-full flex items-center justify-center hover:bg-white/10 transition"

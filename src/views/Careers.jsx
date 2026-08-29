@@ -58,7 +58,7 @@ export default function Careers() {
       <section className="bg-[#282554] text-white py-24 px-[5.35vw] relative overflow-hidden">
         <div 
           className="absolute inset-0 bg-cover bg-center brightness-50"
-          style={{ backgroundImage: `url(${getImage('kent-join-us-6.jpg')})` }}
+          style={{ backgroundImage: `url(${getImage('Hero-01.jpg')})` }}
         />
         <div className="absolute inset-0 bg-gradient-to-t from-[#201e48] via-[#201e48]/30 to-transparent" />
         

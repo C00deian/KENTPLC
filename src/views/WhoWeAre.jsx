@@ -74,7 +74,7 @@ export default function WhoWeAre() {
             Our Beliefs
           </span>
           <h2 className="text-3xl md:text-5xl font-semibold text-[#282554]">
-            What Drives Kent
+            What Drives Arkmont
           </h2>
         </div>
 
@@ -131,7 +131,7 @@ export default function WhoWeAre() {
                 Our History
               </h3>
               <p className="text-sm opacity-80 group-hover:opacity-100 font-light">
-                Trace our origins from 1919 to our merger into a 13,000 strong global engineering company.
+                Trace our origins from 1919 to our merger into a 100+ strong global engineering company.
               </p>
             </div>
             <div className="flex justify-end pt-4">
@@ -151,7 +151,7 @@ export default function WhoWeAre() {
                 Meet Our Team
               </h3>
               <p className="text-sm opacity-80 group-hover:opacity-100 font-light">
-                Meet the leadership executive committee directing Kent towards sustainable energy goals.
+                Meet the leadership executive committee directing Arkmont towards sustainable energy goals.
               </p>
             </div>
             <div className="flex justify-end pt-4">

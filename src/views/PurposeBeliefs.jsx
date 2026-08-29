@@ -11,10 +11,7 @@ export default function PurposeBeliefs() {
     <main className="pt-[76px] lg:pt-[112px]">
       {/* Page Hero */}
       <section className="bg-[#282554] text-white py-24 px-[5.35vw] relative overflow-hidden">
-        <div className="absolute right-0 bottom-0 opacity-10 pointer-events-none text-[30vw] font-bold text-white select-none leading-none translate-y-12 translate-x-12">
-          K
-        </div>
-        
+
         <div className="max-w-4xl relative z-10">
           <span className="text-xs uppercase tracking-widest text-[#ffd52e] font-semibold mb-3 block">
             Who We Are
@@ -39,7 +36,7 @@ export default function PurposeBeliefs() {
               We stand at a critical inflection point in human history. The global energy system must undergo a monumental transition, balancing the immediate demands of energy security with the long-term necessity of decarbonisation.
             </p>
             <p className="text-gray-600 text-lg leading-relaxed mb-6 font-light">
-              Kent is committed to facilitating this transition. We believe that conventional energy must be produced in the most efficient and low-emission way possible, while we aggressively develop low-carbon solutions and build the renewable infrastructure of tomorrow.
+              Arkmont is committed to facilitating this transition. We believe that conventional energy must be produced in the most efficient and low-emission way possible, while we aggressively develop low-carbon solutions and build the renewable infrastructure of tomorrow.
             </p>
           </div>
 

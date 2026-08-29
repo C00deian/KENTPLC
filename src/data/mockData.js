@@ -1,8 +1,8 @@
-// Mock data for the Kent PLC website clone
+// Mock data for the Arkmont website clone
 
 export const topNavigation = [
   { label: 'Who We Are', href: '/who-we-are' },
-  { label: 'Sustainability. by Kent', href: '/sustainability' },
+  { label: 'Sustainability. by Arkmont', href: '/sustainability' },
   { label: 'News & Insights', href: '/news-insights' },
   { label: 'Careers', href: '/join-us' },
   { label: 'Contact Us', href: '/contact-us' }
@@ -65,30 +65,22 @@ export const marketGroups = [
 ]
 
 export const vacancies = [
-  { id: '1', title: 'Construction Coordinator', city: 'Saint John', country: 'Canada', category: 'Project Management' },
-  { id: '2', title: 'Summer Operations Intern', city: 'Sarnia', country: 'Canada', category: 'Engineering' },
-  { id: '3', title: 'Procurement Quality Control Supervisor', city: 'Woking', country: 'United Kingdom', category: 'Project Management' },
-  { id: '4', title: 'Senior Cost Controller - Outside IR35', city: 'Woking', country: 'United Kingdom', category: 'Project Controls' },
-  { id: '5', title: 'Principal Electrical Engineer', city: 'Houston', country: 'United States', category: 'Engineering' },
-  { id: '6', title: 'Senior Telecom Engineer', city: 'Sherwood Park', country: 'Canada', category: 'Engineering' },
-  { id: '7', title: 'Senior Analyzer Engineer', city: 'Calgary', country: 'Canada', category: 'Engineering' },
-  { id: '8', title: 'Engineering Manager', city: 'Corpus Christi', country: 'United States', category: 'Project Management' },
-  { id: '9', title: 'Financial Cost Controller', city: 'Mumbai', cityCode: 'BOM', country: 'India', category: 'Finance' },
-  { id: '10', title: 'Project Controls Assistant', city: 'Houston', country: 'United States', category: 'Project Controls' },
-  { id: '11', title: 'Senior Designer - Instrumentation', city: 'Mumbai', country: 'India', category: 'Engineering' },
-  { id: '12', title: 'Senior HSSE Specialist', city: 'Lytton', country: 'Australia', category: 'Engineering' },
-  { id: '13', title: 'Master Piping Designer', city: 'Bogota', country: 'Colombia', category: 'Engineering' },
-  { id: '14', title: 'Civil Coordinator', city: 'Luanda', country: 'Angola', category: 'Project Management' },
-  { id: '15', title: 'Structural Engineer', city: 'Dubai', country: 'United Arab Emirates', category: 'Engineering' },
-  { id: '16', title: 'Renewables Project Manager', city: 'Woking', country: 'United Kingdom', category: 'Project Management' }
+  { id: '1', title: 'Commissioning Engineer', city: 'Lucknow', country: 'India', category: 'Engineering' },
+  { id: '2', title: 'Automation Specialist', city: 'Lucknow', country: 'India', category: 'Engineering' },
+  { id: '3', title: 'Project Coordinator', city: 'Lucknow', country: 'India', category: 'Project Management' },
+  { id: '4', title: 'Senior Cost Controller', city: 'Lucknow', country: 'India', category: 'Project Controls' },
+  { id: '5', title: 'Electrical Engineer', city: 'Lucknow', country: 'India', category: 'Engineering' },
+  { id: '6', title: 'IT Support Intern', city: 'Lucknow', country: 'India', category: 'IT' },
+  { id: '7', title: 'HR Manager', city: 'Lucknow', country: 'India', category: 'Human Resources' },
+  { id: '8', title: 'Financial Analyst', city: 'Lucknow', country: 'India', category: 'Finance' }
 ]
 
 export const newsItems = [
   {
     category: 'Press Releases & Featured Stories',
-    title: 'Kent awarded Owner’s Engineer contract for Buchan Offshore Wind Project',
-    excerpt: 'Kent supports the Buchan Offshore Wind Project as Owner’s Engineer',
-    image: 'Buchan-Offshore-Wind-Project.jpg',
+    title: 'Arkmont awarded Owner’s Engineer contract for Buchan Offshore Wind Project',
+    excerpt: 'Arkmont supports the Buchan Offshore Wind Project as Owner’s Engineer',
+    image: 'arkmont-production-1-1_2025-10-13-172336_pslr.jpg',
     date: 'June 24, 2026'
   },
   {
@@ -100,30 +92,30 @@ export const newsItems = [
   },
   {
     category: 'Project News',
-    title: 'Kent awarded Construction Management Services contract by CABGOC in Angola',
-    excerpt: 'Kent strengthens its relationship with CABGOC through integrated construction management.',
-    image: 'Angola-hero.jpg',
+    title: 'Arkmont awarded Construction Management Services contract by CABGOC in Angola',
+    excerpt: 'Arkmont strengthens its relationship with CABGOC through integrated construction management.',
+    image: 'arkmont-production-1-1_2025-10-13-172336_pslr.jpg',
     date: 'June 05, 2026'
   },
   {
     category: 'Events & Awards',
-    title: "Kent recognised as 'Best in Class' at Safety Excellence Awards",
+    title: "Arkmont recognised as 'Best in Class' at Safety Excellence Awards",
     excerpt: 'Our Americas team celebrates a major safety award.',
     image: 'Safety-award.jpg',
     date: 'May 28, 2026'
   },
   {
     category: 'Press Releases & Featured Stories',
-    title: 'Kent appointed to support next phase of low carbon pipeline in the UK',
+    title: 'Arkmont appointed to support next phase of low carbon pipeline in the UK',
     excerpt: 'Our advisory team will deliver design services for regional CO2 networks.',
-    image: 'Planet-transition-optimised_2025-10-13-172356_igkb.jpg',
+    image: 'arkmont-production-1-1_2025-10-13-172336_pslr.jpg',
     date: 'May 14, 2026'
   },
   {
     category: 'Insights & Opinions',
     title: 'Decarbonising the oil sands: a pathway to net-zero engineering',
     excerpt: 'A technical analysis of carbon capture technologies applicable to deep well operations.',
-    image: 'kent-production-1-1_2025-10-13-172336_pslr.jpg',
+    image: 'arkmont-production-1-1_2025-10-13-172336_pslr.jpg',
     date: 'April 30, 2026'
   }
 ]
@@ -134,48 +126,34 @@ export const projectItems = [
     location: 'Estevan, Canada',
     category: 'Carbon Capture & Storage',
     description: "The world's first commercial-scale carbon capture project on a coal-fired power plant, capturing 1M tonnes of CO2 per year.",
-    image: 'Safety-award.jpg'
+    image: 'arkmont-production-1-1_2025-10-13-172336_pslr.jpg'
   },
   {
     title: 'HyNet Low Carbon Hydrogen Cluster',
     location: 'North West England & North Wales',
     category: 'Hydrogen & Low Carbon',
     description: "Providing technology selection and engineering services for Cadent's hydrogen pipeline networks and distribution infrastructure.",
-    image: 'Planet-transition-optimised_2025-10-13-172356_igkb.jpg'
-  },
-  {
-    title: 'Buchan Offshore Wind Farm',
-    location: 'Scotland, United Kingdom',
-    category: 'Offshore Wind',
-    description: "Serving as Owner's Engineer for the development of a flagship floating wind project in the North Sea.",
-    image: 'Buchan-Offshore-Wind-Project.jpg'
+    image: 'arkmont-production-1-1_2025-10-13-172336_pslr.jpg'
   },
   {
     title: 'LNG Canada Facility',
     location: 'Kitimat, Canada',
     category: 'Gas & LNG',
     description: "Integrated commissioning and PMC services for one of the largest energy investment projects in Canadian history.",
-    image: 'kent-production-1-1_2025-10-13-172336_pslr.jpg'
+    image: 'arkmont-production-1-1_2025-10-13-172336_pslr.jpg'
   },
   {
     title: 'Viking CCS Concept Design',
     location: 'Humber Region, UK',
     category: 'Carbon Capture & Storage',
     description: "Conducting concept and feasibility designs for CO2 offshore transport and deep geological storage pipelines.",
-    image: 'Safety-award.jpg'
+    image: 'arkmont-production-1-1_2025-10-13-172336_pslr.jpg'
   },
-  {
-    title: 'St Brieuc Offshore Substation Jackets',
-    location: 'Brittany, France',
-    category: 'Offshore Wind',
-    description: "Structural and electrical design for the offshore substation jacket foundations supporting 62 wind turbines.",
-    image: 'Angola-hero.jpg'
-  }
 ]
 
 export const homeContent = {
   hero: {
-    eyebrow: 'We are Kent',
+    eyebrow: 'We are Arkmont',
     title: 'The energy within.',
     paragraphs: [
       'We design, build, commission, maintain and optimise the energy assets that keep the world moving.',
@@ -210,16 +188,16 @@ export const homeContent = {
     body: 'We have delivered projects in over 88 countries, thriving on tackling new and challenging territories for our clients across the globe. Wherever you operate, we speak your language to get your problems solved faster.'
   },
   careers: {
-    eyebrow: 'Working for Kent',
+    eyebrow: 'Working for Arkmont',
     title: 'Our people are our most valuable asset',
     body: 'If you have world class ambitions to reach the stars while keeping your feet on the ground, we’re the team for you. We offer career paths in more markets and more sectors than ever before.'
   }
 }
 
 export const globalStats = [
-  { value: '13,000+', label: 'Employees' },
-  { value: '88+', label: 'Project Locations' },
-  { value: '34', label: 'Countries' },
+  { value: '100+', label: 'Employees' },
+  { value: '5+', label: 'Project Locations' },
+  { value: '2+', label: 'Countries' },
   { value: '0', label: 'Barriers' }
 ]
 
@@ -246,13 +224,13 @@ export const footerData = {
 export const whoWeAreData = {
   hero: {
     title: 'Who We Are',
-    subtitle: 'Over 13,000 people strong, operating across 34 countries, united by the energy within.',
-    image: 'kent-join-us-6.jpg'
+    subtitle: 'Over 100 people strong, operating across 2+ countries, united by the energy within.',
+    image: 'arkmont-production-1-1_2025-10-13-172336_pslr.jpg'
   },
   overview: {
     title: 'A Global Powerhouse',
     content: [
-      'At Kent, we design, build, and maintain the assets that power the world. We are one of the most established services providers to the global energy industry, with a history dating back to 1919.',
+      'At Arkmont, we design, build, and maintain the assets that power the world. We are one of the most established services providers to the global energy industry, with a history dating back to 1919.',
       'We support our clients through three main capability sectors: Advisory & Consulting, Engineering & Project Delivery, and Asset Support & Optimisation. With our expertise, we enable clients to maximise performance and safely navigate the energy transition.'
     ]
   },
@@ -275,14 +253,14 @@ export const whoWeAreData = {
     }
   ],
   timeline: [
-    { year: '1919', title: 'Kent Founded', description: 'Established as an engineering contracting business in Ireland, supporting early utilities infrastructure.' },
+    { year: '1919', title: 'Arkmont Founded', description: 'Established as an engineering contracting business in Ireland, supporting early utilities infrastructure.' },
     { year: '1970s', title: 'Offshore Pioneer', description: 'Began engineering major offshore platforms in the North Sea, setting early standards for safety.' },
     { year: '2000s', title: 'Global Reach', description: 'Expanded operations across the Middle East, Caspian region, and the Americas, growing to 5,000 employees.' },
-    { year: '2021', title: 'Merging Strengths', description: 'Acquired SNC-Lavalin Resources division, uniting two industry leaders to form Kent, a 13,000+ strong powerhouse.' },
+    { year: '2021', title: 'Merging Strengths', description: 'Acquired SNC-Lavalin Resources division, uniting two industry leaders to form Arkmont, a 100+ strong powerhouse.' },
     { year: '2026', title: 'Energy Transition Leader', description: 'Supporting major green hydrogen, carbon capture, and offshore wind projects worldwide.' }
   ],
   leadership: [
-    { name: 'John Gilley', role: 'Chief Executive Officer', image: 'Safety-award.jpg', bio: 'John has over 30 years of industry experience and has led Kent through its transition to a global energy services leader.' },
+    { name: 'John Gilley', role: 'Chief Executive Officer', image: 'Safety-award.jpg', bio: 'John has over 30 years of industry experience and has led Arkmont through its transition to a global energy services leader.' },
     { name: 'Sameer Khan', role: 'Chief Financial Officer', image: 'Safety-award.jpg', bio: 'Sameer oversees global financial operations, capital allocation, and business growth strategies.' },
     { name: 'Paula Fitzpatrick', role: 'Chief People Officer', image: 'Safety-award.jpg', bio: 'Paula is responsible for talent acquisition, training, and building our diverse global culture.' },
     { name: 'Usman Dastgir', role: 'President - Low Carbon Solutions', image: 'Safety-award.jpg', bio: 'Usman directs advisory services and clean energy transition engineering projects globally.' }
@@ -291,9 +269,9 @@ export const whoWeAreData = {
 
 export const sustainabilityData = {
   hero: {
-    title: 'Sustainability. by Kent',
+    title: 'Sustainability. by Arkmont',
     subtitle: 'Our commitment to a lower-carbon world through sustainable practices, people, and principles.',
-    image: 'Planet-transition-optimised_2025-10-13-172356_igkb.jpg'
+    image: 'arkmont-production-1-1_2025-10-13-172336_pslr.jpg'
   },
   pillars: [
     {
@@ -334,26 +312,22 @@ export const sustainabilityData = {
 
 export const officesData = [
   {
-    region: 'Americas',
+    region: 'India',
     offices: [
-      { city: 'Houston', country: 'United States', address: '10370 Richmond Ave, Suite 300, Houston, TX 77042', phone: '+1 713 375 6000' },
-      { city: 'Calgary', country: 'Canada', address: '808 4th Avenue SW, Suite 500, Calgary, AB T2P 3E8', phone: '+1 403 294 2100' },
-      { city: 'Bogota', country: 'Colombia', address: 'Carrera 9 No. 113-52, Of. 805, Bogota', phone: '+57 1 629 1100' }
-    ]
-  },
-  {
-    region: 'Europe & Africa',
-    offices: [
-      { city: 'Woking', country: 'United Kingdom', address: 'Kent House, Station Approach, Woking, GU22 7YT', phone: '+44 1483 719200' },
-      { city: 'London', country: 'United Kingdom', address: '20 Eastbourne Terrace, London, W2 6LG', phone: '+44 20 3003 4000' },
-      { city: 'Luanda', country: 'Angola', address: 'Rua do Centro de Convencoes, Talatona, Luanda', phone: '+244 222 678 000' }
-    ]
-  },
-  {
-    region: 'Middle East & Caspian',
-    offices: [
-      { city: 'Dubai', country: 'United Arab Emirates', address: 'Al Sufouh Rd, Arenco Tower, Suite 1401, Dubai', phone: '+971 4 440 2500' },
-      { city: 'Mumbai', country: 'India', address: 'Godrej Coliseum, Office No. 801, Somaiya Hospital Road, Sion East, Mumbai', phone: '+91 22 6826 3000' }
+      {
+        city: 'Lucknow',
+        country: 'India',
+        address: 'Lonapur Gomati Nagar Extension, Lucknow, Pin Code - 226010, Uttar Pradesh, India',
+        phone: '+91 (Admin)',
+        email: 'admin@arkmont.in'
+      }
     ]
   }
 ]
+
+export const corporateDetails = {
+  legalName: 'Arkmont Technology Private Limited',
+  cin: 'SRNAC3404031',
+  address: 'Lonapur Gomati Nagar Extension, Lucknow, Pin Code - 226010, Uttar Pradesh, India',
+  email: 'admin@arkmont.in'
+}

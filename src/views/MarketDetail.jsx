@@ -45,14 +45,14 @@ export default function MarketDetail() {
 
   // Hero backgrounds map for mock visuals
   const heroImages = {
-    'conventional-energy': 'kent-production-1-1_2025-10-13-172336_pslr.jpg',
-    'renewables': 'Buchan-Offshore-Wind-Project.jpg',
-    'low-carbon-solutions': 'Planet-transition-optimised_2025-10-13-172356_igkb.jpg',
-    'process-chemicals': 'Angola-hero.jpg'
+    'conventional-energy': 'arkmont-production-1-1_2025-10-13-172336_pslr.jpg',
+    'renewables': 'arkmont-production-1-1_2025-10-13-172336_pslr.jpg',
+    'low-carbon-solutions': 'arkmont-production-1-1_2025-10-13-172336_pslr.jpg',
+    'process-chemicals': 'arkmont-production-1-1_2025-10-13-172336_pslr.jpg'
   }
 
   const groupSlug = slugify(activeGroup.title)
-  const bgImageName = heroImages[groupSlug] || 'kent-production-1-1_2025-10-13-172336_pslr.jpg'
+  const bgImageName = heroImages[groupSlug] || 'arkmont-production-1-1_2025-10-13-172336_pslr.jpg'
   const bgUrl = `/images/${bgImageName}?q=82&auto=format&fit=crop&w=1800`
 
   return (
