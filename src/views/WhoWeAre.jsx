@@ -101,61 +101,61 @@ export default function WhoWeAre() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
           <Link 
             to="/who-we-are/purpose-beliefs"
-            className="p-10 border border-white/20 rounded hover:bg-white hover:text-[#282554] transition duration-300 group flex flex-col justify-between min-h-[220px]"
+            className="p-10 border border-white/20 rounded hover:bg-white transition duration-300 group flex flex-col justify-between min-h-[220px]"
           >
             <div>
               <span className="text-xs uppercase tracking-widest text-[#11c5c2] font-semibold mb-2 block">
                 Pillar 01
               </span>
-              <h3 className="text-2xl font-semibold mb-3">
+              <h3 className="text-2xl font-semibold mb-3 group-hover:text-[#282554] transition-colors">
                 Purpose &amp; Beliefs
               </h3>
-              <p className="text-sm opacity-80 group-hover:opacity-100 font-light">
+              <p className="text-sm opacity-80 group-hover:opacity-100 group-hover:text-[#282554] font-light transition-colors">
                 Discover the beliefs, purpose statement, and core values that guide our energy projects.
               </p>
             </div>
             <div className="flex justify-end pt-4">
-              <ArrowRight className="w-5 h-5 group-hover:translate-x-2 transition" />
+              <ArrowRight className="w-5 h-5 group-hover:translate-x-2 group-hover:text-[#282554] transition" />
             </div>
           </Link>
 
           <Link 
             to="/who-we-are/our-history"
-            className="p-10 border border-white/20 rounded hover:bg-white hover:text-[#282554] transition duration-300 group flex flex-col justify-between min-h-[220px]"
+            className="p-10 border border-white/20 rounded hover:bg-white transition duration-300 group flex flex-col justify-between min-h-[220px]"
           >
             <div>
               <span className="text-xs uppercase tracking-widest text-[#11c5c2] font-semibold mb-2 block">
                 Pillar 02
               </span>
-              <h3 className="text-2xl font-semibold mb-3">
+              <h3 className="text-2xl font-semibold mb-3 group-hover:text-[#282554] transition-colors">
                 Our History
               </h3>
-              <p className="text-sm opacity-80 group-hover:opacity-100 font-light">
+              <p className="text-sm opacity-80 group-hover:opacity-100 group-hover:text-[#282554] font-light transition-colors">
                 Trace our origins from 1919 to our merger into a 100+ strong global engineering company.
               </p>
             </div>
             <div className="flex justify-end pt-4">
-              <ArrowRight className="w-5 h-5 group-hover:translate-x-2 transition" />
+              <ArrowRight className="w-5 h-5 group-hover:translate-x-2 group-hover:text-[#282554] transition" />
             </div>
           </Link>
 
           <Link 
             to="/who-we-are/meet-our-team"
-            className="p-10 border border-white/20 rounded hover:bg-white hover:text-[#282554] transition duration-300 group flex flex-col justify-between min-h-[220px]"
+            className="p-10 border border-white/20 rounded hover:bg-white transition duration-300 group flex flex-col justify-between min-h-[220px]"
           >
             <div>
               <span className="text-xs uppercase tracking-widest text-[#11c5c2] font-semibold mb-2 block">
                 Pillar 03
               </span>
-              <h3 className="text-2xl font-semibold mb-3">
+              <h3 className="text-2xl font-semibold mb-3 group-hover:text-[#282554] transition-colors">
                 Meet Our Team
               </h3>
-              <p className="text-sm opacity-80 group-hover:opacity-100 font-light">
+              <p className="text-sm opacity-80 group-hover:opacity-100 group-hover:text-[#282554] font-light transition-colors">
                 Meet the leadership executive committee directing Arkmont towards sustainable energy goals.
               </p>
             </div>
             <div className="flex justify-end pt-4">
-              <ArrowRight className="w-5 h-5 group-hover:translate-x-2 transition" />
+              <ArrowRight className="w-5 h-5 group-hover:translate-x-2 group-hover:text-[#282554] transition" />
             </div>
           </Link>
         </div>
